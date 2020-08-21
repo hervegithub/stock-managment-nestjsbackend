@@ -7,10 +7,7 @@ import { Users } from './users.model';
 @Injectable()
 export class UsersService {
 
-    companies: Users[];
-
     constructor(@InjectModel('Company') private companyModel: Model<Users>,) {
-        this.companies = [];
     }
 
     async  getAllCompany(){
